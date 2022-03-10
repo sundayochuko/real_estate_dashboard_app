@@ -103,7 +103,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
             <p className=" text-sm text-medium text-prefixGray-dark ">
               {property.description}
             </p>
-            <button className=" focus:outline-none text-sm bg-gray-200 hover:bg-gray-300 py-2.5 px-4 my-8 rounded-lg ">
+            <button className=" focus:outline-none text-sm text-white bg-prefixblue-dark  py-2.5 px-4 my-8 rounded-xl ">
               Contact Owner
             </button>
             <div className=" h-[180px] w-full bg-gray-300 ">
