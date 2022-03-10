@@ -135,7 +135,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
                     </p>
                   </div>
                 </div>
-                <button className=" focus:outline-none h-[40px] w-[130px] text-sm text-white rounded-xl bg-prefixblue-dark mt-4">
+                <button className=" focus:outline-none h-[40px] w-[130px] text-sm text-white rounded-xl bg-prefixblue-dark mt-5">
                   Upgrade to Pro
                 </button>
               </div>
