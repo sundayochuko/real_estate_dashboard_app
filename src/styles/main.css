@@ -528,6 +528,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
+.z-30{
+  z-index: 30;
+}
+
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -571,6 +575,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-4{
@@ -635,6 +644,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .flex{
@@ -719,6 +736,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[4px\]{
   height: 4px;
+}
+
+.h-\[800px\]{
+  height: 800px;
+}
+
+.h-\[1000px\]{
+  height: 1000px;
+}
+
+.h-\[100px\]{
+  height: 100px;
+}
+
+.h-\[900px\]{
+  height: 900px;
+}
+
+.h-\[950px\]{
+  height: 950px;
+}
+
+.h-\[955px\]{
+  height: 955px;
+}
+
+.h-\[980px\]{
+  height: 980px;
 }
 
 .w-full{
@@ -1061,6 +1106,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pl-0{
   padding-left: 0px;
 }
@@ -1332,6 +1382,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 0px;
   }
 
+  .md\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .md\:my-6{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .md\:mb-5{
     margin-bottom: 1.25rem;
   }
@@ -1350,6 +1415,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:mr-4{
     margin-right: 1rem;
+  }
+
+  .md\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-6{
+    margin-top: 1.5rem;
   }
 
   .md\:inline-flex{
@@ -1372,6 +1445,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 50px;
   }
 
+  .md\:h-\[45px\]{
+    height: 45px;
+  }
+
   .md\:w-\[74\%\]{
     width: 74%;
   }
@@ -1390,6 +1467,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[90\%\]{
     width: 90%;
+  }
+
+  .md\:w-\[80\%\]{
+    width: 80%;
+  }
+
+  .md\:w-\[45px\]{
+    width: 45px;
   }
 
   .md\:flex-row{
@@ -1419,6 +1504,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:py-\[18px\]{
     padding-top: 18px;
     padding-bottom: 18px;
+  }
+
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:pl-\[18px\]{
@@ -1452,6 +1542,19 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.5rem;
   }
 
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:leading-normal{
+    line-height: 1.5;
+  }
+
+  .md\:leading-8{
+    line-height: 2rem;
+  }
+
   .md\:placeholder\:text-base::-webkit-input-placeholder{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1477,6 +1580,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:my-0{
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .lg\:my-\[35px\]{
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .lg\:my-4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .lg\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .lg\:mb-0{
@@ -1523,6 +1641,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 80px;
   }
 
+  .lg\:h-\[45px\]{
+    height: 45px;
+  }
+
   .lg\:w-\[84\.4\%\]{
     width: 84.4%;
   }
@@ -1541,6 +1663,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-\[85\%\]{
     width: 85%;
+  }
+
+  .lg\:w-\[30\%\]{
+    width: 30%;
+  }
+
+  .lg\:w-\[45px\]{
+    width: 45px;
   }
 
   .lg\:flex-row{
@@ -1573,6 +1703,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 2rem;
   }
 
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .lg\:pl-\[18px\]{
     padding-left: 18px;
   }
@@ -1598,6 +1733,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:leading-normal{
+    line-height: 1.5;
+  }
+
+  .lg\:leading-9{
+    line-height: 2.25rem;
+  }
+
+  .lg\:leading-8{
+    line-height: 2rem;
   }
 
   .lg\:placeholder\:text-base::-webkit-input-placeholder{
