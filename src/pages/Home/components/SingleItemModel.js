@@ -65,7 +65,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
                 </p>
               </div>
               <div className=" border-b w-full my-8 md:my-6 lg:my-[35px] "></div>
-              <p className=" flex items-center  font-semibold mb-8 ">
+              <div className=" flex items-center  font-semibold mb-8 ">
                 <i>
                   <div
                     style={{ backgroundImage: `url(${property.ownerAvatar})` }}
@@ -75,7 +75,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
                 <div className=" flex flex-col items-start text-sm ">
                   {property.owner}
                 </div>
-              </p>
+              </div>
               <div
                 style={{ backgroundImage: `url(${property.image})` }}
                 className="relative h-[200px] w-full rounded-[10px] bg-gray-300 bg-center bg-no-repeat bg-cover "

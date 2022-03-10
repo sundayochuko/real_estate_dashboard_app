@@ -35,7 +35,7 @@ const Home = () => {
         <div className=" h-[71%] w-[90%] overflow-y-scroll scrollbar-hide py-4 ">
           {Properties.map((item) => {
             return (
-              <button
+              <div
                 key={item.id}
                 onClick={async () => {
                   setId(item.id);
@@ -101,7 +101,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </button>
+              </div>
             );
           })}
         </div>
