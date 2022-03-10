@@ -115,8 +115,8 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
                 <LocationOnIcon
                   className="text-red-500"
                   fontSize="large"
-                  lat={59.9554136}
-                  lng={30.3378446}
+                  lat={config.center.lat}
+                  lng={config.center.lng}
                 />
               </GoogleMapReact>
             </div>
@@ -126,7 +126,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
                   <RocketLaunchOutlinedIcon fontSize="small" />
                 </div>
                 <div className=" flex flex-col items-start ">
-                  <h1 className=" font-semibold text-base text-black leading-5- ">
+                  <h1 className=" font-semibold text-base text-black leading-5 ">
                     Free plan
                   </h1>
                   <p className=" text-xs text-gray-400 ">$50 billed monthly</p>
