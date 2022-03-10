@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import { Properties } from "../../../DummyData/properties";
 
 const Searchbar = () => {
-  const [searchTerm, setSearchTerm] = useState();
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const handleOnChange = (e) => {
-    const value = e.target.value;
-    console.log(value);
+  const handleEnterKeyPress = async (e) => {
+    if (e.key === "Enter") {
+    }
   };
 
   return (
@@ -19,7 +20,17 @@ const Searchbar = () => {
         type="text"
         placeholder="Search for company, provider, user etc."
         value={searchTerm}
-        onChange={() => handleOnChange()}
+        onChange={async (e) => {
+          setSearchTerm(e.target.value);
+          const filteredProperties = await Properties.filter((item) => {
+            return item.title
+              .toLowerCase()
+              .includes(e.target.value.toLowerCase());
+          });
+
+          console.log(filteredProperties);
+        }}
+        onKeyPress={handleEnterKeyPress}
         className=" h-full w-full focus:outline-none bg-transparent text-sm md:text-base lg:text-base placeholder:text-xs md:placeholder:text-base lg:placeholder:text-base "
       />
     </div>
