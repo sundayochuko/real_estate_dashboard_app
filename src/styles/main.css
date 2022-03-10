@@ -774,6 +774,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1010px;
 }
 
+.h-\[1020px\]{
+  height: 1020px;
+}
+
+.h-\[1050px\]{
+  height: 1050px;
+}
+
 .w-full{
   width: 100%;
 }

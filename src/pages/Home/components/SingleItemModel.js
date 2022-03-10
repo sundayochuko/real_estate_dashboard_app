@@ -42,7 +42,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
             className="z-10 absolute h-full w-full bg-black bg-opacity-50 "
           ></div>
           <div className=" z-20 absolute right-0 h-full w-[100%] md:w-[80%] lg:w-[30%] overflow-y-scroll scrollbar-hide ">
-            <div className=" z-30 absolute right-0 h-[1010px] w-full bg-white shadow-xl px-5 md:px-12 lg:px-12">
+            <div className=" z-30 absolute right-0 h-[1050px] w-full bg-white shadow-xl px-5 md:px-12 lg:px-12">
               <button
                 onClick={() => {
                   setId("");
