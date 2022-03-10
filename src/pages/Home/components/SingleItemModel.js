@@ -42,7 +42,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
             className="z-10 absolute h-full w-full bg-black bg-opacity-5 "
           ></div>
           <div className=" z-20 absolute right-0 h-full w-[100%] md:w-[80%] lg:w-[30%] overflow-y-scroll scrollbar-hide ">
-            <div className=" z-30 absolute right-0 h-[1050px] w-full bg-white shadow-xl px-5 md:px-12 lg:px-12">
+            <div className=" z-30 absolute right-0 h-[1050px] md:h-[1030px] lg:h-[1130px] w-full bg-white shadow-xl px-5 md:px-12 lg:px-12">
               <button
                 onClick={() => {
                   setId("");
@@ -107,7 +107,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
               <button className=" focus:outline-none text-sm text-white bg-prefixblue-dark  py-2.5 px-4 my-8 md:my-8 lg:my-8 rounded-xl ">
                 Contact Owner
               </button>
-              <div className=" h-[180px] w-full bg-gray-300 ">
+              <div className=" h-[180px] w-full bg-gray-300 mt-10 md:mt-14 lg:mt-20 ">
                 <GoogleMapReact
                   bootstrapURLKeys={{ key: googleMapApi }}
                   defaultCenter={config.center}

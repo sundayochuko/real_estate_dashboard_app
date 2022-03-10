@@ -782,6 +782,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1050px;
 }
 
+.h-\[1080px\]{
+  height: 1080px;
+}
+
+.h-\[1150px\]{
+  height: 1150px;
+}
+
+.h-\[1130px\]{
+  height: 1130px;
+}
+
+.h-\[1030px\]{
+  height: 1030px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1445,6 +1461,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 1.5rem;
   }
 
+  .md\:mt-14{
+    margin-top: 3.5rem;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:inline-flex{
     display: inline-flex;
   }
@@ -1467,6 +1491,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:h-\[45px\]{
     height: 45px;
+  }
+
+  .md\:h-\[1130px\]{
+    height: 1130px;
+  }
+
+  .md\:h-\[1030px\]{
+    height: 1030px;
   }
 
   .md\:w-\[74\%\]{
@@ -1663,6 +1695,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:h-\[45px\]{
     height: 45px;
+  }
+
+  .lg\:h-\[1130px\]{
+    height: 1130px;
   }
 
   .lg\:w-\[84\.4\%\]{
