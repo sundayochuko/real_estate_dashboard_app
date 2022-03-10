@@ -7,6 +7,7 @@ import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import { googleMapApi } from "../../../config/config";
 import GoogleMapReact from "google-map-react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";
 
 const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
   const [property, setProperty] = useState({});
@@ -105,7 +106,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
             <button className=" focus:outline-none text-sm bg-gray-200 hover:bg-gray-300 py-2.5 px-4 my-8 rounded-lg ">
               Contact Owner
             </button>
-            <div className=" h-[200px] w-full bg-gray-300 ">
+            <div className=" h-[180px] w-full bg-gray-300 ">
               <GoogleMapReact
                 bootstrapURLKeys={{ key: googleMapApi }}
                 defaultCenter={config.center}
@@ -120,7 +121,20 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
               </GoogleMapReact>
             </div>
             <div className=" absolute bottom-0 w-[80%] flex items-center justify-between py-6 border-t border-prefixGray-dark ">
-              <div className=" h-[40px] w-[40px] rounded-full bg-prefixblue-dark bg-opacity-20 "></div>
+              <div className=" flex items-center ">
+                <div className=" flex items-center justify-center h-[40px] w-[40px] rounded-full bg-prefixblue-dark bg-opacity-20 text-prefixblue-dark mr-2 ">
+                  <RocketLaunchOutlinedIcon fontSize="small" />
+                </div>
+                <div className=" flex flex-col items-start ">
+                  <h1 className=" font-semibold text-base text-black leading-5- ">
+                    Free plan
+                  </h1>
+                  <p className=" text-xs text-gray-400 ">$50 billed monthly</p>
+                </div>
+              </div>
+              <button className=" focus:outline-none h-[40px] w-[130px] text-sm text-white rounded-xl bg-prefixblue-dark ">
+                Upgrade to Pro
+              </button>
             </div>
           </div>
         </div>

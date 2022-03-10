@@ -717,6 +717,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20px;
 }
 
+.h-\[4px\]{
+  height: 4px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -783,6 +787,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[80\%\]{
   width: 80%;
+}
+
+.w-\[4px\]{
+  width: 4px;
+}
+
+.w-\[60px\]{
+  width: 60px;
+}
+
+.w-\[80px\]{
+  width: 80px;
+}
+
+.w-\[100px\]{
+  width: 100px;
+}
+
+.w-\[120px\]{
+  width: 120px;
+}
+
+.w-\[140px\]{
+  width: 140px;
+}
+
+.w-\[130px\]{
+  width: 130px;
 }
 
 .flex-row{
@@ -855,6 +887,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .border{
@@ -1111,6 +1147,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-none{
   line-height: 1;
+}
+
+.leading-3{
+  line-height: .75rem;
+}
+
+.leading-8{
+  line-height: 2rem;
+}
+
+.leading-4{
+  line-height: 1rem;
+}
+
+.leading-6{
+  line-height: 1.5rem;
 }
 
 .text-black{
