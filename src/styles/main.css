@@ -766,6 +766,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 980px;
 }
 
+.h-\[1100px\]{
+  height: 1100px;
+}
+
+.h-\[1010px\]{
+  height: 1010px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1027,6 +1035,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-opacity-0{
   --tw-bg-opacity: 0;
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-cover{
