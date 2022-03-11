@@ -23,7 +23,7 @@ const Login = ({ isLogedIn, setIsLogedIn }) => {
       return;
     }
     return null;
-  }, [user]);
+  }, [isLogedIn, setIsLogedIn, user]);
 
   const handleInput = (e) => {
     const { name, value } = e.target;
