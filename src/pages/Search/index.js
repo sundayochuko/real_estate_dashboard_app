@@ -3,7 +3,7 @@ import Searchbar from "../../components/Searchbar";
 import Sidebar from "../../components/Sidebar";
 import SingleItemModel from "../../components/SingleItemModel";
 import { Properties } from "../../DummyData/properties";
-import PropertiesCard from "./components/PropertiesCard";
+import PropertiesCard from "../../components/PropertiesCard";
 
 const Index = ({
   id,
@@ -27,13 +27,13 @@ const Index = ({
         />
         <div className=" flex flex-row items-center justify-between w-[90%] my-10 md:my-12 lg:my-16 ">
           <h1 className=" text-base md:text-2xl lg:text-3xl font-semibold ">
-            Search Result
+            Search Results
           </h1>
         </div>
-        <div className=" h-[71%] w-[90%] overflow-y-scroll scrollbar-hide py-4 ">
+        <div className=" h-[71%] w-[90%] overflow-y-scroll scrollbar-hide py-2 md:py-4 lg:py-4 ">
           {errors.filteredProperties ? (
-            <div className=" h-full w-full flex flex-col items-center mt-28 text-sm">
-              <p className=" font-base text-lg mb-2 ">
+            <div className=" h-full w-full flex flex-col items-center mt-28 text-center text-xs md:text-sm lg:text-sm">
+              <p className=" font-base text-base md:text-lg lg:text-lg mb-2 ">
                 {" "}
                 {errors.filteredProperties}{" "}
               </p>
