@@ -25,7 +25,7 @@ const Home = ({
           filteredProperties={filteredProperties}
           setFilteredProperties={setFilteredProperties}
         />
-        <div className=" flex flex-row items-center justify-between w-[90%] my-10 md:my-12 lg:my-16 ">
+        <div className=" flex flex-row items-center justify-between w-[90%] mt-10 md:mt-12 lg:mt-16 mb-4 md:mb-6 lg:mb-4 ">
           <h1 className=" text-base md:text-2xl lg:text-3xl font-semibold ">
             Listings
           </h1>
@@ -38,7 +38,7 @@ const Home = ({
             </button>
           </div>
         </div>
-        <div className=" h-[71%] w-[90%] overflow-y-scroll scrollbar-hide py-4 ">
+        <div className=" h-[75%] w-[90%] overflow-y-scroll scrollbar-hide py-4 ">
           {Properties.map((item) => {
             return (
               <div key={item.id}>

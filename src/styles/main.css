@@ -826,6 +826,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-\[74\%\]{
+  height: 74%;
+}
+
+.h-\[75\%\]{
+  height: 75%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -940,6 +948,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[45\%\]{
   width: 45%;
+}
+
+.w-\[200px\]{
+  width: 200px;
 }
 
 .flex-row{
@@ -1567,6 +1579,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0px;
   }
 
+  .md\:mb-4{
+    margin-bottom: 1rem;
+  }
+
+  .md\:mt-12{
+    margin-top: 3rem;
+  }
+
+  .md\:mb-12{
+    margin-bottom: 3rem;
+  }
+
+  .md\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
   .md\:inline-flex{
     display: inline-flex;
   }
@@ -1599,6 +1631,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 1030px;
   }
 
+  .md\:h-\[71\%\]{
+    height: 71%;
+  }
+
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:h-\[80\%\]{
+    height: 80%;
+  }
+
+  .md\:h-\[75\%\]{
+    height: 75%;
+  }
+
   .md\:w-\[74\%\]{
     width: 74%;
   }
@@ -1625,6 +1673,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[45px\]{
     width: 45px;
+  }
+
+  .md\:w-\[40px\]{
+    width: 40px;
+  }
+
+  .md\:w-\[100px\]{
+    width: 100px;
+  }
+
+  .md\:w-\[150px\]{
+    width: 150px;
+  }
+
+  .md\:w-\[40\%\]{
+    width: 40%;
+  }
+
+  .md\:w-\[60\%\]{
+    width: 60%;
+  }
+
+  .md\:w-\[180\%\]{
+    width: 180%;
+  }
+
+  .md\:w-\[250px\]{
+    width: 250px;
+  }
+
+  .md\:w-full{
+    width: 100%;
   }
 
   .md\:flex-row{
@@ -1703,6 +1783,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pb-4{
     padding-bottom: 1rem;
+  }
+
+  .md\:pb-2{
+    padding-bottom: 0.5rem;
   }
 
   .md\:text-2xl{
@@ -1804,6 +1888,30 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 1rem;
   }
 
+  .lg\:mt-16{
+    margin-top: 4rem;
+  }
+
+  .lg\:mb-16{
+    margin-bottom: 4rem;
+  }
+
+  .lg\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .lg\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .lg\:mb-4{
+    margin-bottom: 1rem;
+  }
+
   .lg\:inline-flex{
     display: inline-flex;
   }
@@ -1832,6 +1940,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 1130px;
   }
 
+  .lg\:h-\[71\%\]{
+    height: 71%;
+  }
+
+  .lg\:h-\[75\%\]{
+    height: 75%;
+  }
+
+  .lg\:h-\[74\%\]{
+    height: 74%;
+  }
+
+  .lg\:h-\[73\%\]{
+    height: 73%;
+  }
+
   .lg\:w-\[84\.4\%\]{
     width: 84.4%;
   }
@@ -1858,6 +1982,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-\[45px\]{
     width: 45px;
+  }
+
+  .lg\:w-\[18\%\]{
+    width: 18%;
+  }
+
+  .lg\:w-\[80\%\]{
+    width: 80%;
   }
 
   .lg\:flex-row{

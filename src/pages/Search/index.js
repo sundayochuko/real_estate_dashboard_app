@@ -16,21 +16,12 @@ const Index = ({
   filteredProperties,
   setFilteredProperties,
 }) => {
-  const [value, setValue] = useState(10000);
+  const [value, setValue] = useState(50000);
   const [lowestPrice, setLowestPrice] = useState(1000);
-
-  const handleChangeStart = () => {
-    console.log("Change event started");
-  };
 
   const handleChange = (value) => {
     setValue(value);
   };
-
-  const handleChangeComplete = () => {
-    console.log("Change event completed");
-  };
-
   const handleClick = async () => {
     const properties = await Properties.filter((item) => {
       return item.price <= value;
@@ -55,13 +46,13 @@ const Index = ({
           filteredProperties={filteredProperties}
           setFilteredProperties={setFilteredProperties}
         />
-        <div className=" flex flex-row items-center justify-between w-[90%] my-10 md:my-12 lg:my-16 ">
+        <div className=" flex flex-row items-center justify-between w-[90%] mt-10 md:mt-12 lg:mt-16 mb-4 md:mb-6 lg:mb-10 ">
           <h1 className=" text-base md:text-2xl lg:text-3xl font-semibold ">
             Search Results
           </h1>
         </div>
-        <div className=" h-[71%] w-[90%] flex items-start justify-between ">
-          <div className=" h-[150px] w-[18%] rounded-[10px] bg-white py-2 md:py-2 lg:py-4 px-3 md:px-3 lg:px-4 ">
+        <div className=" h-[75%] md:h-[75%] lg:h-[73%] w-[90%] flex flex-col md:flex-col lg:flex-row items-start justify-between ">
+          <div className=" h-[150px] w-[200px] md:w-[250px] lg:w-[18%] rounded-[10px] bg-white py-2 md:py-2 lg:py-4 px-3 md:px-3 lg:px-4 mb-4 md:mb-4 lg:mb-0 ">
             <div className=" flex items-center justify-between ">
               <h1 className=" text-sm ">PRICE ($)</h1>
               <button
@@ -77,9 +68,7 @@ const Index = ({
               min={lowestPrice}
               max={50000}
               value={value}
-              onChangeStart={handleChangeStart}
               onChange={handleChange}
-              onChangeComplete={handleChangeComplete}
             />
             <div className=" flex items-center justify-between ">
               <input
@@ -101,7 +90,7 @@ const Index = ({
               />
             </div>
           </div>
-          <div className=" h-full w-[80%] overflow-y-scroll scrollbar-hide pb-2 md:pb-4 lg:pb-4 ">
+          <div className=" h-full w-full md:w-full lg:w-[80%] overflow-y-scroll scrollbar-hide pb-2 md:pb-2 lg:pb-4 ">
             {errors.filteredProperties ? (
               <div className=" h-full w-full flex flex-col items-center mt-28 text-center text-xs md:text-sm lg:text-sm">
                 <p className=" font-base text-base md:text-lg lg:text-lg mb-2 ">
