@@ -52,7 +52,7 @@ const Index = ({
           </h1>
         </div>
         {errors.filteredProperties ? (
-          <div className=" h-full w-full flex flex-col items-center mt-28 text-center text-xs md:text-sm lg:text-sm">
+          <div className=" h-[75%] md:h-[75%] lg:h-[73%] w-[90%] flex flex-col items-center mt-28 text-center text-xs md:text-sm lg:text-sm">
             <p className=" font-base text-base md:text-lg lg:text-lg mb-2 ">
               {errors.filteredProperties}
             </p>
