@@ -16,7 +16,7 @@ const Sidebar = () => {
         className=" w-full pl-0 md:pl-6 lg:pl-10 pt-10 flex items-center justify-center md:justify-start lg:justify-start"
       >
         <div className=" h-[35px] w-[35px] rounded-lg bg-prefixblue-dark flex items-center justify-center mr-0 md:mr-5 lg:mr-5 ">
-          <p className=" text-white text-lg font-bold ">Z</p>{" "}
+          <p className=" text-white text-lg font-bold ">Z</p>
         </div>
         <h1 className=" hidden md:inline-flex lg:inline-flex text-lg font-bold">
           Z.S.T
@@ -39,7 +39,7 @@ const Sidebar = () => {
               }
             >
               <CampaignOutlinedIcon fontSize="medium" />
-            </i>{" "}
+            </i>
             <p className=" hidden md:inline-flex lg:inline-flex ">Listings </p>
           </li>
         </Link>
@@ -51,7 +51,6 @@ const Sidebar = () => {
                 : " flex items-center justify-center md:justify-start lg:justify-start h-[40px] w-full my-6"
             }
           >
-            {" "}
             <i
               className={
                 path === "/dashboard"
@@ -60,7 +59,7 @@ const Sidebar = () => {
               }
             >
               <DashboardOutlinedIcon fontSize="medium" />
-            </i>{" "}
+            </i>
             <p className=" hidden md:inline-flex lg:inline-flex ">Dashboard </p>
           </li>
         </Link>
@@ -72,7 +71,6 @@ const Sidebar = () => {
                 : " flex items-center justify-center md:justify-start lg:justify-start h-[40px] w-full my-6"
             }
           >
-            {" "}
             <i
               className={
                 path === "/providers"
@@ -81,7 +79,7 @@ const Sidebar = () => {
               }
             >
               <FeedOutlinedIcon fontSize="medium" />
-            </i>{" "}
+            </i>
             <p className=" hidden md:inline-flex lg:inline-flex ">Providers </p>
           </li>
         </Link>
@@ -93,7 +91,6 @@ const Sidebar = () => {
                 : " flex items-center justify-center md:justify-start lg:justify-start h-[40px] w-full my-6"
             }
           >
-            {" "}
             <i
               className={
                 path === "/billing"
@@ -114,7 +111,6 @@ const Sidebar = () => {
                 : " flex items-center justify-center md:justify-start lg:justify-start h-[40px] w-full my-6"
             }
           >
-            {" "}
             <i
               className={
                 path === "/settings"
@@ -123,7 +119,7 @@ const Sidebar = () => {
               }
             >
               <SettingsOutlinedIcon fontSize="medium" />
-            </i>{" "}
+            </i>
             <p className=" hidden md:inline-flex lg:inline-flex ">Settings </p>
           </li>
         </Link>
