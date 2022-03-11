@@ -5,6 +5,7 @@ import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import AttachMoneyOutlinedIcon from "@mui/icons-material/AttachMoneyOutlined";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
+import NumberFormat from "react-number-format";
 
 const PropertiesCard = ({ item, setId, setShowModel }) => {
   return (
@@ -45,7 +46,12 @@ const PropertiesCard = ({ item, setId, setShowModel }) => {
             <div className=" flex flex-col items-start justify-start pl-2 ">
               <p className=" text-xs  font-medium">Price</p>
               <p className=" text-sm text-gray-500 font-semibold ">
-                {item.price}
+                <NumberFormat
+                  value={item.price}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  prefix={"$"}
+                />
               </p>
             </div>
           </div>
