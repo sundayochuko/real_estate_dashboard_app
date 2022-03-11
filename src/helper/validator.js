@@ -9,20 +9,24 @@ export default function validateInfo(values) {
     }
   }
 
-  if (values.userName.toLowerCase() !== User.userName.toLowerCase()) {
-    errors.userName = "Username incorrect";
+  if (values.userName) {
+    if (values.userName.toLowerCase() !== User.userName.toLowerCase()) {
+      errors.userName = "Username incorrect";
+    }
+
+    if (!values.userName) {
+      errors.userName = "Username required";
+    }
   }
 
-  if (values.password.toLowerCase() !== User.password.toLowerCase()) {
-    errors.password = "Password incorrect";
-  }
+  if (values.userName) {
+    if (values.password.toLowerCase() !== User.password.toLowerCase()) {
+      errors.password = "Password incorrect";
+    }
 
-  if (!values.userName) {
-    errors.userName = "Username required";
-  }
-
-  if (!values.password) {
-    errors.password = "Password required";
+    if (!values.password) {
+      errors.password = "Password required";
+    }
   }
   return errors;
 }

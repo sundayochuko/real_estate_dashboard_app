@@ -15,7 +15,6 @@ const Login = ({ isLogedIn, setIsLogedIn }) => {
   const [ShowPassword, setShowPassword] = useState(false);
 
   const user = localStorage.getItem("user");
-  console.log(user);
 
   useEffect(() => {
     if (user) {

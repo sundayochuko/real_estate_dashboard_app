@@ -25,7 +25,9 @@ const Searchbar = ({
       if (path === "/") {
         navigate("/search");
       }
-      setSearchTerm("");
+      if (path === "/search") {
+        setSearchTerm("");
+      }
     }
   };
 
