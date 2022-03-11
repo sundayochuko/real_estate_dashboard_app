@@ -8,6 +8,7 @@ import { googleMapApi } from "../config/config";
 import GoogleMapReact from "google-map-react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";
+import NumberFormat from "react-number-format";
 
 const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
   const [property, setProperty] = useState({});
@@ -99,7 +100,12 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
                 </button>
               </div>
               <p className=" text-xl md:text-2xl lg:text-2xl font-semibold my-3 md:my-4 lg:my-4 ">
-                {property.price}
+                <NumberFormat
+                  value={property.price}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  prefix={"$"}
+                />
               </p>
               <p className=" text-sm text-medium text-prefixGray-dark ">
                 {property.description}
