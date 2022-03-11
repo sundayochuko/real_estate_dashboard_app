@@ -6,17 +6,22 @@ import Providers from "./pages/Providers";
 import Billing from "./pages/Billing";
 import Settings from "./pages/Settings";
 import Search from "./pages/Search";
+import Login from "./components/Login";
 
 function App() {
   const [showModel, setShowModel] = useState(false);
   const [id, setId] = useState("");
   const [filteredProperties, setFilteredProperties] = useState([]);
   const [errors, setErrors] = useState({});
+  const [isLogedIn, setIsLogedIn] = useState(true);
 
   return (
     <>
       <Router>
         <div>
+          {isLogedIn && (
+            <Login isLogedIn={isLogedIn} setIsLogedIn={setIsLogedIn} />
+          )}
           <Routes>
             <Route
               exact
@@ -26,6 +31,8 @@ function App() {
                   id={id}
                   setId={setId}
                   errors={errors}
+                  isLogedIn={isLogedIn}
+                  setIsLogedIn={setIsLogedIn}
                   setErrors={setErrors}
                   showModel={showModel}
                   setShowModel={setShowModel}

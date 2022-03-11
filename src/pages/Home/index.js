@@ -16,7 +16,7 @@ const Home = ({
   setFilteredProperties,
 }) => {
   return (
-    <div className="  flex flex-row h-screen w-full bg-prefixGray-light ">
+    <div className=" relative flex flex-row h-screen w-full bg-prefixGray-light ">
       <Sidebar showModel={showModel} setShowModel={setShowModel} />
       <div className="relative h-full w-[85%] md:w-[74%] lg:w-[84.4%] flex flex-col items-center justify-start bg-transparent ">
         <Searchbar
