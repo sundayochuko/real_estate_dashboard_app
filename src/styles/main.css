@@ -654,6 +654,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mt-28{
+  margin-top: 7rem;
+}
+
 .flex{
   display: flex;
 }
@@ -1229,6 +1237,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-black{
   font-weight: 900;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .leading-none{

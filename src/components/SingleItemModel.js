@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
-import { Properties } from "../../../DummyData/properties";
+import { Properties } from "../DummyData/properties";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
-import { googleMapApi } from "../../../config/config";
+import { googleMapApi } from "../config/config";
 import GoogleMapReact from "google-map-react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";

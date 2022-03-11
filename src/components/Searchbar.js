@@ -1,13 +1,36 @@
 import React, { useState } from "react";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import { Properties } from "../../../DummyData/properties";
+import { Properties } from "../DummyData/properties";
+import { useLocation, useNavigate } from "react-router-dom";
+import validate from "../helper/validator";
 
-const Searchbar = () => {
+const Searchbar = ({
+  setErrors,
+  filteredProperties,
+  setFilteredProperties,
+}) => {
   const [searchTerm, setSearchTerm] = useState("");
+  let navigate = useNavigate();
+  const path = useLocation().pathname;
 
   const handleEnterKeyPress = async (e) => {
     if (e.key === "Enter") {
+      const properties = await Properties.filter((item) => {
+        return item.title.toLowerCase().includes(e.target.value.toLowerCase());
+      });
+
+      setErrors(validate({ properties: properties, searchTerm: searchTerm }));
+
+      setFilteredProperties(properties);
+      if (path === "/") {
+        navigate("/search");
+      }
+      setSearchTerm("");
     }
+  };
+
+  const handleonChange = async (e) => {
+    setSearchTerm(e.target.value);
   };
 
   return (
@@ -20,16 +43,7 @@ const Searchbar = () => {
         type="text"
         placeholder="Search for company, provider, user etc."
         value={searchTerm}
-        onChange={async (e) => {
-          setSearchTerm(e.target.value);
-          const filteredProperties = await Properties.filter((item) => {
-            return item.title
-              .toLowerCase()
-              .includes(e.target.value.toLowerCase());
-          });
-
-          console.log(filteredProperties);
-        }}
+        onChange={handleonChange}
         onKeyPress={handleEnterKeyPress}
         className=" h-full w-full focus:outline-none bg-transparent text-sm md:text-base lg:text-base placeholder:text-xs md:placeholder:text-base lg:placeholder:text-base "
       />

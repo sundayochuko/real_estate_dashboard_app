@@ -6,7 +6,7 @@ import CreditCardOutlinedIcon from "@mui/icons-material/CreditCardOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import { useLocation } from "react-router-dom";
 
-const Sidebar = ({ showModel, setShowModel }) => {
+const Sidebar = () => {
   const path = useLocation().pathname;
 
   return (
@@ -23,14 +23,14 @@ const Sidebar = ({ showModel, setShowModel }) => {
         <a href="/">
           <li
             className={
-              path === "/"
+              path === "/" || path === "/search"
                 ? "flex items-center justify-center md:justify-start lg:justify-start h-[40px] w-full text-black border-r-4 border-prefixblue-dark my-6"
                 : " flex items-center justify-center md:justify-start lg:justify-start h-[40px] w-full my-6"
             }
           >
             <i
               className={
-                path === "/"
+                path === "/" || path === "/search"
                   ? "text-prefixblue-dark mr-0 md:mr-4 lg:mr-4 "
                   : " mr-0 md:mr-4 lg:mr-4 "
               }

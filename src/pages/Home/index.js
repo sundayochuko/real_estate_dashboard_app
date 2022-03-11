@@ -1,24 +1,36 @@
-import React, { useState } from "react";
-import Searchbar from "./components/Searchbar";
+import React from "react";
+import Searchbar from "../../components/Searchbar";
 import Sidebar from "../../components/Sidebar";
 import { Properties } from "../../DummyData/properties";
 import AttachMoneyOutlinedIcon from "@mui/icons-material/AttachMoneyOutlined";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
-import SingleItemModel from "./components/SingleItemModel";
+import SingleItemModel from "../../components/SingleItemModel";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 
-const Home = () => {
-  const [showModel, setShowModel] = useState(false);
-  const [id, setId] = useState("");
-
+const Home = ({
+  id,
+  setId,
+  errors,
+  setErrors,
+  showModel,
+  setShowModel,
+  filteredProperties,
+  setFilteredProperties,
+}) => {
+  // console.log(filteredProperties);
   return (
     <div className="  flex flex-row h-screen w-full bg-prefixGray-light ">
       <Sidebar showModel={showModel} setShowModel={setShowModel} />
       <div className="relative h-full w-[85%] md:w-[74%] lg:w-[84.4%] flex flex-col items-center justify-start bg-transparent ">
-        <Searchbar />
+        <Searchbar
+          errors={errors}
+          setErrors={setErrors}
+          filteredProperties={filteredProperties}
+          setFilteredProperties={setFilteredProperties}
+        />
         <div className=" flex flex-row items-center justify-between w-[90%] my-10 md:my-12 lg:my-16 ">
           <h1 className=" text-base md:text-2xl lg:text-3xl font-semibold ">
             Listings
