@@ -4,23 +4,26 @@ import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined";
 import CreditCardOutlinedIcon from "@mui/icons-material/CreditCardOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Sidebar = () => {
   const path = useLocation().pathname;
 
   return (
     <div className="  relative h-full w-[15%] md:w-[26%] lg:w-[15.6%] bg-white border-r border-gray-300 flex flex-col items-center ">
-      <div className=" w-full pl-0 md:pl-6 lg:pl-10 pt-10 flex items-center justify-center md:justify-start lg:justify-start">
+      <Link
+        to="/"
+        className=" w-full pl-0 md:pl-6 lg:pl-10 pt-10 flex items-center justify-center md:justify-start lg:justify-start"
+      >
         <div className=" h-[35px] w-[35px] rounded-lg bg-prefixblue-dark flex items-center justify-center mr-0 md:mr-5 lg:mr-5 ">
           <p className=" text-white text-lg font-bold ">Z</p>{" "}
         </div>
         <h1 className=" hidden md:inline-flex lg:inline-flex text-lg font-bold">
           Z.S.T
         </h1>
-      </div>
+      </Link>
       <ul className=" pl-0 md:pl-6 lg:pl-10 mt-4 md:mt-8 lg:mt-20 text-gray-400 text-sm font-bold w-full ">
-        <a href="/">
+        <Link to="/">
           <li
             className={
               path === "/" || path === "/search"
@@ -39,8 +42,8 @@ const Sidebar = () => {
             </i>{" "}
             <p className=" hidden md:inline-flex lg:inline-flex ">Listings </p>
           </li>
-        </a>
-        <a href="/dashboard">
+        </Link>
+        <Link to="/dashboard">
           <li
             className={
               path === "/dashboard"
@@ -60,8 +63,8 @@ const Sidebar = () => {
             </i>{" "}
             <p className=" hidden md:inline-flex lg:inline-flex ">Dashboard </p>
           </li>
-        </a>
-        <a href="/providers">
+        </Link>
+        <Link to="/providers">
           <li
             className={
               path === "/providers"
@@ -81,8 +84,8 @@ const Sidebar = () => {
             </i>{" "}
             <p className=" hidden md:inline-flex lg:inline-flex ">Providers </p>
           </li>
-        </a>
-        <a href="/billing">
+        </Link>
+        <Link to="/billing">
           <li
             className={
               path === "/billing"
@@ -102,8 +105,8 @@ const Sidebar = () => {
             </i>{" "}
             <p className=" hidden md:inline-flex lg:inline-flex ">Billing </p>
           </li>
-        </a>
-        <a href="/settings">
+        </Link>
+        <Link to="/settings">
           <li
             className={
               path === "/settings"
@@ -123,7 +126,7 @@ const Sidebar = () => {
             </i>{" "}
             <p className=" hidden md:inline-flex lg:inline-flex ">Settings </p>
           </li>
-        </a>
+        </Link>
       </ul>
       <div className=" hidden md:inline-flex lg:inline-flex absolute bottom-10 flex-col items-center justify-end h-[300px] w-[235px] md:w-[90%] lg:w-[85%] rounded-lg bg-prefixblue-dark bg-opacity-20 ">
         <p className=" text-[250px] font-black text-prefixblue-dark opacity-10 leading-none ">
