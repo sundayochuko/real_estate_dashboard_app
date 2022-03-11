@@ -9,7 +9,7 @@ export const Properties = [
     phone: "+234 344 3343 565",
     owner: "Sam Wrinkler",
     ownerAvatar: `https://images.unsplash.com/photo-1602133187081-4874fdbd555c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80`,
-    price: "$4,000",
+    price: "8000",
     like: false,
   },
   {
@@ -22,7 +22,7 @@ export const Properties = [
     phone: "+234 344 3343 565",
     owner: "John Thinker",
     ownerAvatar: `https://images.unsplash.com/photo-1602133187081-4874fdbd555c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80`,
-    price: "$10,000",
+    price: "12000",
     like: false,
   },
   {
@@ -35,7 +35,7 @@ export const Properties = [
     phone: "+234 344 3343 565",
     owner: "Lucass Meanter",
     ownerAvatar: `https://images.unsplash.com/photo-1602133187081-4874fdbd555c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80`,
-    price: "$20,000",
+    price: "20000",
     like: false,
   },
   {
@@ -48,7 +48,7 @@ export const Properties = [
     phone: "+234 344 3343 565",
     owner: "Jane Giga",
     ownerAvatar: `https://images.unsplash.com/photo-1602133187081-4874fdbd555c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80`,
-    price: "$370,000",
+    price: "37000",
     like: false,
   },
   {
@@ -61,7 +61,7 @@ export const Properties = [
     phone: "+234 344 3343 565",
     owner: "Hustle Aminao",
     ownerAvatar: `https://images.unsplash.com/photo-1602133187081-4874fdbd555c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80`,
-    price: "$12,000,000",
+    price: "40000",
     like: false,
   },
   {
@@ -74,7 +74,7 @@ export const Properties = [
     phone: "+234 344 3343 565",
     owner: "Jitho Kano",
     ownerAvatar: `https://images.unsplash.com/photo-1602133187081-4874fdbd555c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80`,
-    price: "$1,000,000",
+    price: "46000",
     like: false,
   },
 ];
