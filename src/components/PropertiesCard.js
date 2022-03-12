@@ -7,14 +7,18 @@ import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import NumberFormat from "react-number-format";
 
-const PropertiesCard = ({ item, setId, setShowModel }) => {
+const PropertiesCard = ({ item, id, setId, setShowModel }) => {
   return (
     <div
       onClick={async () => {
         setId(item.id);
         setShowModel(true);
       }}
-      className=" flex flex-col md:flex-col lg:flex-row items-start md:items-start lg:items-center justify-start focus:outline-none h-auto md:h-auto lg:h-[180px] w-full bg-white rounded-[12px] pl-0 md:pl-[18px] lg:pl-[18px] py-0 md:py-[18px] lg:py-[18px] mb-4 "
+      className={
+        item.id === id
+          ? " flex flex-col md:flex-col lg:flex-row items-start md:items-start lg:items-center justify-start focus:outline-none h-auto md:h-auto lg:h-[180px] w-full bg-white rounded-[12px] pl-0 md:pl-[18px] lg:pl-[18px] py-0 md:py-[18px] lg:py-[18px] mb-4 border-[2.5px] border-prefixblue-dark outline outline-prefixblue-light outline-offset-1 outline-4 "
+          : " flex flex-col md:flex-col lg:flex-row items-start md:items-start lg:items-center justify-start focus:outline-none h-auto md:h-auto lg:h-[180px] w-full bg-white rounded-[12px] pl-0 md:pl-[18px] lg:pl-[18px] py-0 md:py-[18px] lg:py-[18px] mb-4 "
+      }
     >
       <div
         style={{ backgroundImage: `url(${item.image})` }}

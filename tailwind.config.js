@@ -20,6 +20,7 @@ module.exports = {
           dark: "#202020",
         },
         prefixblue: {
+          light: "#d3d2ef",
           dark: "#2d1dc4",
         },
         // orange: {

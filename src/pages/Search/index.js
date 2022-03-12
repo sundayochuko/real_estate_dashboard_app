@@ -121,6 +121,7 @@ const Index = ({
                       <div key={item.id}>
                         <PropertiesCard
                           item={item}
+                          id={id}
                           setId={setId}
                           setShowModel={setShowModel}
                         />

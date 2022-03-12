@@ -16,7 +16,6 @@ const Home = ({
   setFilteredProperties,
 }) => {
   //Add the purple border for active propertie
-  //Add a logout button to the sidebar
 
   return (
     <div className=" relative flex flex-row h-screen w-full bg-prefixGray-light ">
@@ -41,13 +40,14 @@ const Home = ({
             </button>
           </div>
         </div>
-        <div className=" h-[75%] w-[90%] overflow-y-scroll scrollbar-hide py-4 ">
+        <div className=" h-[75%] w-[90%] overflow-y-scroll scrollbar-hide py-4 px-2 ">
           {Properties.map((item) => {
             return (
               <div key={item.id}>
                 <PropertiesCard
                   item={item}
                   setId={setId}
+                  id={id}
                   setShowModel={setShowModel}
                 />
               </div>
