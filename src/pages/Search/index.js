@@ -17,7 +17,7 @@ const Index = ({
   setFilteredProperties,
 }) => {
   const [value, setValue] = useState(50000);
-  const [lowestPrice, setLowestPrice] = useState(1000);
+  const lowestPrice = 1000;
 
   const handleChange = (value) => {
     setValue(value);
