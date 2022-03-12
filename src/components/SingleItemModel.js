@@ -83,6 +83,7 @@ const SingleItemModel = ({ showModel, setShowModel, id, setId }) => {
               >
                 <button
                   onClick={async () => {
+                    setId("");
                     if (property.like === true) {
                       property["like"] = false;
                       return setShowModel(false);
