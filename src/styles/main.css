@@ -835,6 +835,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 4px;
 }
 
+.rounded-\[20px\]{
+  border-radius: 20px;
+}
+
+.rounded-\[50px\]{
+  border-radius: 50px;
+}
+
 .border{
   border-width: 1px;
 }
