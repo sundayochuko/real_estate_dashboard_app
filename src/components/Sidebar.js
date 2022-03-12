@@ -5,6 +5,7 @@ import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined";
 import CreditCardOutlinedIcon from "@mui/icons-material/CreditCardOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import { useLocation, Link } from "react-router-dom";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 const Sidebar = () => {
   const path = useLocation().pathname;
@@ -121,6 +122,24 @@ const Sidebar = () => {
               <SettingsOutlinedIcon fontSize="medium" />
             </i>
             <p className=" hidden md:inline-flex lg:inline-flex ">Settings </p>
+          </li>
+        </Link>
+        <Link
+          to="/"
+          onClick={() => {
+            localStorage.removeItem("user");
+            return window.location.reload();
+          }}
+        >
+          <li
+            className={
+              " flex items-center justify-center md:justify-start lg:justify-start h-[40px] w-full my-6"
+            }
+          >
+            <i className={" mr-0 md:mr-4 lg:mr-4 "}>
+              <LogoutIcon fontSize="medium" />
+            </i>
+            <p className=" hidden md:inline-flex lg:inline-flex ">Logout </p>
           </li>
         </Link>
       </ul>
