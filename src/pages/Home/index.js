@@ -15,8 +15,6 @@ const Home = ({
   filteredProperties,
   setFilteredProperties,
 }) => {
-  //Add the purple border for active propertie
-
   return (
     <div className=" relative flex flex-row h-screen w-full bg-prefixGray-light ">
       <Sidebar showModel={showModel} setShowModel={setShowModel} />

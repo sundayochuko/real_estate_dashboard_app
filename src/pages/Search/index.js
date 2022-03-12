@@ -103,13 +103,14 @@ const Index = ({
                 />
               </div>
             </div>
-            <div className=" h-full w-full md:w-full lg:w-[80%] overflow-y-scroll scrollbar-hide pb-2 md:pb-2 lg:pb-4 ">
+            <div className=" h-full w-full md:w-full lg:w-[80%] overflow-y-scroll scrollbar-hide px-2 py-2 pb-2 md:pb-2 lg:pb-4 ">
               {filteredProperties.length < 1
                 ? Properties.map((item) => {
                     return (
                       <div key={item.id}>
                         <PropertiesCard
                           item={item}
+                          id={id}
                           setId={setId}
                           setShowModel={setShowModel}
                         />
